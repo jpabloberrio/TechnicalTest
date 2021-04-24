@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Zemoga Devops</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<p>Insert your name:</p>
+<input type="text" id="name" name="name">
+<button id="greetButton" type="button">call server</button>
+
+<script type="text/javascript">
+        document.getElementById("greetButton").onclick = function () {
+            var name = document.getElementById("name").value;
+            location.href = "user?name=" + name;
+        };
+</script>
+</body>
+</html>
